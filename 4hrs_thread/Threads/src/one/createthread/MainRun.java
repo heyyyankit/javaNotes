@@ -68,6 +68,21 @@ Thread t1 = new Thread(() -> {
 });
 t1.start();
 
+can write
+    class MyRunnable implements Runnable {
+        @Override
+        public void run() {
+            System.out.println("Running...");
+        }
+    }
+    Runnable task = new MyRunnable();
+as
+    Runnable task = new Runnable() {
+        @Override
+        public void run() {
+            System.out.println("Running...");
+        }
+    };
 
 
 */
