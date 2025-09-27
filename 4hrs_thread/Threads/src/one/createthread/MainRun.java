@@ -85,4 +85,19 @@ as
     };
 
 
+more on lambda, in case of one function
+
+Customer c = new Customer() {
+    @Override
+    public void buy() {
+        System.out.println("Buying item...");
+    }
+};
+c.buy();
+
+Customer c = () -> System.out.println("Buying item...");
+
+
+
+
 */
